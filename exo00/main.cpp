@@ -3,6 +3,6 @@
 int main(int argc, char **argv)
 {
 
-    ScalarConverter::convert("0");
+    ScalarConverter::convert("13.5");
 
 }
