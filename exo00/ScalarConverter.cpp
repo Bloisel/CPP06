@@ -2,10 +2,12 @@
 
 void ScalarConverter::convert(const std::string &litt)
 {
+
+
     //std::numeric_limits<float>::max()
     // sensee recevoir un nbr toujours 
-     // si autre chose que un nombre si chaine vide 
-     // impossible 
+    // si autre chose que un nombre si chaine vide 
+    // impossible 
 
     std::cout << std::fixed << std::setprecision(1);
 
@@ -27,8 +29,21 @@ void ScalarConverter::convert(const std::string &litt)
     {
         std::cout << "char: " <<"impossible" << std::endl;
         std::cout << "int: " << "impossible" << std::endl;
-        std::cout <<"float: " << f << "f" << std::endl;
-        std::cout << "double: " << d << std::endl;
+        if (litt == "nan" || litt == "nanf")
+        {
+            std::cout << "float: " << "nanf" << std::endl;
+            std::cout << "double: " << "nan" << std::endl;
+        }
+        if (litt == "+inf" || litt == "+inff")
+        {
+            std::cout << "float: " << "+inff" << std::endl;
+            std::cout << "double: " << "+inf" << std::endl; 
+        }
+        if (litt == "-inf" || litt == "-inff")
+        {
+            std::cout << "float: " << "-inff" << std::endl;
+            std::cout << "double: " << "-inf" << std::endl; 
+        }
         return;
     }
     
@@ -40,8 +55,11 @@ void ScalarConverter::convert(const std::string &litt)
     {
         std::cout << "char: " << "impossible" << std::endl;
     }
-    else if ((litt != "nanf" && litt != "nan" ) 
-        && litt.length() > 3)
+    //else if (litt.length() > 3 && )
+    //{
+        
+
+    // }
     // si char est une chaine de caractere par exemple att float 13.45 
     // else if ()
     // {
