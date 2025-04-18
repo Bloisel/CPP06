@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bloisel <bloisel@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/04/15 15:40:21 by bloisel           #+#    #+#             */
+/*   Updated: 2025/04/15 15:48:06 by bloisel          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ScalarConverter.hpp"
 
-int main(int argc, char **argv)
+int main()
 {
 
-    ScalarConverter::convert("13.5");
+    ScalarConverter::convert("0");
 
 }
